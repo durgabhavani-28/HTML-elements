@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the HTML Elements Demo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#media">Media</a></li>
+    </ul>
+</nav>
+
+<section id="text">
+    <h2>Text Elements</h2>
+    <p>This is a paragraph element.</p>
+    <p><strong>Bold text</strong> and <em>italic text</em>.</p>
+    <blockquote>This is a blockquote.</blockquote>
+    <ul>
+        <li>Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+    </ul>
+    <ol>
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+    </ol>
+    <pre>
+Preformatted text
+    </pre>
+</section>
+
+<section id="forms">
+    <h2>Form Elements</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="dzire">Dzire</option>
+            <option value="fortuner">Fortuner</option>
+            <option value="kia">Kia</option>
+            <option value="nexon">Nexon</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<section id="tables">
+    <h2>Table Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rajesh</td>
+                <td>24</td>
+                <td>kakinada</td>
+            </tr>
+            <tr>
+                <td>Bhanu</td>
+                <td>21</td>
+                <td>Rajamahendravaram</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="media">
+    <h2>Media Elements</h2>
+    <h3>Image</h3>
+    <img src="https://via.placeholder.com/150" alt="Placeholder image">
+    <h3>Video</h3>
+    <video controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</section>
+
+<footer>
+    <p>&copy; 2025 HTML Elements Demo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
